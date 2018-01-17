@@ -1,18 +1,12 @@
 const path              = require('path');
-const GoCDServerService = require(path.resolve("lib/services/gocdServerService.js"));
-const APITestService    = require(path.resolve("lib/services/apiTestService.js"));
+const GoCDServerService = require(path.resolve("lib/services/GocdServerService.js"));
+const GoCDApiService    = require(path.resolve("lib/services/GocdApiService.js"));
+const APITestService    = require(path.resolve("lib/services/ApiTestService.js"));
 
 const gocdServerService = new GoCDServerService();
-console.log(gocdServerService);
-const apiTestService    = new APITestService();
-
+const gocdApiService    = new GoCDApiService(gocdServerService);
+const apiTestService    = new APITestService(gocdApiService);
 
 gocdServerService.startServer();
 apiTestService.execute();
 gocdServerService.stopServer();
-
-// GoCDServerService.startServer(); //starts and waits until the server is up
-// APITestService.execute(); //executes all tests
-// GoCDServerService.stopServer(); //stops the gocd server
-
-
