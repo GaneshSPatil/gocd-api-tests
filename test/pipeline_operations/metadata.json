@@ -1,0 +1,5 @@
+{
+  "api_name": "Pipeline Operations",
+  "api_description": "Pipeline Operations endpoint allows super admins, pipeline group admins and pipeline group operate users to pause and unpause a pipeline",
+  "supported_since": "18.1.0"
+}

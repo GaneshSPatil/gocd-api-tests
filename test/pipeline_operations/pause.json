@@ -1,0 +1,19 @@
+{
+  "priority": 1,
+  "request": {
+    "endpoint": "/go/api/pipelines/up42/pause",
+    "method": "POST",
+    "headers": {
+      "Accept": "application/vnd.go.cd.v1+json",
+      "Confirm": "true",
+      "Content-Type": "application/json"
+    }
+  },
+  "response": {
+    "code": "200",
+    "headers": [],
+    "body": {
+      "message": "wohoo! i paused the pipeline"
+    }
+  }
+}
