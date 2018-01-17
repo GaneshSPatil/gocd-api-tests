@@ -1,0 +1,14 @@
+{
+  "name": "gocd-api-test",
+  "version": "0.0.1",
+  "description": "GoCD API functional tests",
+  "main": "runtest.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GoCD contributors",
+  "license": "ISC"
+}
