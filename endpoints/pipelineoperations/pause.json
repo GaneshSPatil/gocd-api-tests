@@ -4,9 +4,10 @@
     "endpoint": "/go/api/pipelines/up42/pause",
     "method": "POST",
     "headers": {
-      "Accept": "application/vnd.go.cd.v1+json",
-      "Confirm": "true",
-      "Content-Type": "application/json"
+      "Confirm": "true"
+    },
+    "data": {
+      "pauseCause": "take some rest!"
     }
   },
   "response": {

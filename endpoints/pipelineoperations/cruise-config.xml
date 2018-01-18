@@ -18,4 +18,28 @@
             </admins>
         </security>
     </server>
+    <pipelines group="first">
+        <authorization>
+            <view>
+                <user>operate</user>
+            </view>
+            <admins>
+                <user>operate</user>
+            </admins>
+        </authorization>
+        <pipeline name="up42">
+            <materials>
+                <git url="test-repo" />
+            </materials>
+            <stage name="up42_stage">
+                <jobs>
+                    <job name="up42_job">
+                        <tasks>
+                            <exec command="ls" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+        </pipeline>
+    </pipelines>
 </cruise>
