@@ -10,5 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "GoCD contributors",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
 }

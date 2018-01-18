@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cruise-config.xsd" schemaVersion="97">
+    <server artifactsdir="artifacts" agentAutoRegisterKey="9eac2de1-5a73-444d-b8ee-af7beff2b4ad" webhookSecret="306e0137-41fe-4c58-a1f3-e504e1239856" commandRepositoryLocation="default" serverId="baed6852-8c24-42d7-84e7-6bcc0c99258c">
+        <security>
+            <authConfigs>
+                <authConfig id="9cad79b0-4d9e-4a62-829c-eb4d9488062f" pluginId="cd.go.authentication.passwordfile">
+                    <property>
+                        <key>PasswordFilePath</key>
+                        <value>/Users/ganeshpatil/projects/gocd/manual-testing/ant_hg/password.properties</value>
+                    </property>
+                </authConfig>
+            </authConfigs>
+            <roles>
+                <role name="xyz" />
+            </roles>
+            <admins>
+                <user>admin</user>
+            </admins>
+        </security>
+    </server>
+</cruise>
